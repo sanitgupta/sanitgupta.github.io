@@ -122,10 +122,11 @@
               <a href="https://www.cse.iitb.ac.in/~shivaram/">Prof. Shivaram Kalyanakrishnan</a>
 
               <br> 
-              <p>Developing and analysing algorithms for the regular bandit setting and a "batch-sampling" setting in
-                multi-armed bandits, in which a batch of pulls must be executed
-                before the outcomes of the pulls are available. Have empirically demonstrated improvements over baselines for these settings. 
-                Have made substantial progress towards proving upper bounds on regret.
+              <p>We developed algorithms for the regular multi-armed bandit setting and a "batch-sampling" setting,
+                in which a batch of pulls must be executed
+                before the rewards of the pulls are received. We have empirically demonstrated improvements over 
+                other algorithms for these settings. 
+                We have made substantial progress towards formally proving non-asymptotic upper bounds on regret.
               </p>
             </td>
           </tr>
@@ -139,12 +140,13 @@
               <br>   
               <a href="https://www.me.iitb.ac.in/~sgopalak/">Prof. Shivasubramanian Gopalakrishnan</a>
               <br>
-              <p>Solving the laplace gives us the steady state temperatures of any object given boundary conditions. 
-                 Developed a solver that iteratively computes the solution to the laplacian for arbitrarily shaped objects
-                 with any number of processors available.
-                 Designed parallel versions with MPI, distributing parts of the problem among processors and 
-                 performing communication between them to speed up the solution, achieving ~11x speed-up with 16 cores.
-                 Used graph partitioning algorithms to minimize communication volume and efficiently distribute computation.</p>
+              <p>The solution to the laplacian equation is used in a large number of domains, including finding the steady state
+                 temperatures of an object given the boundary conditions. We developed a solver that iteratively computes the solution
+                 to the laplacian for arbitrarily shaped objects making use of whatever number of processors is available.
+                 The parallel versions were designed with the MPI paradigm, the problem was divided into smaller parts,
+                 distributed among processors and communication was perfomed between the processors every iteration.
+                 To minimize the communication volume between processors and achieve maximum speed-up graph partitioning algorithms 
+                 from METIS were used. With 16 processors available, we were successful in achieving ~11x speedup.</p>
             </td>
           </tr>
           
