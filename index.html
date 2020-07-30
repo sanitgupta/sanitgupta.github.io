@@ -52,17 +52,13 @@
         <br>
         <br>
         My primary interest is in the domain of artificial intelligence 
-        with a focus on reinforcement learning. I am particularly interested in developing efficient reinforcement learning
-        and bandit algorithms and analysing them from a theoretical point of view. I am also fascinated by various other fields,
-        including distributed computing, deep learning, and optimization. 
-               <br>
+        with a focus on reinforcement learning. I am particularly interested in developing efficient reinforcement learning and bandit algorithms and proving guarantees on their performance. I am also fascinated by various other fields, including distributed computing, deep learning, optimization, and applications in healthcare and finance.
         <br>
-        During my internship at the 
-        Max Planck Institute of Intelligent Systems under <a href="https://sites.google.com/site/falklieder/home">Dr. Falk Lieder</a>,
+        <br>
+        During my internship at the <a href="https://www.is.mpg.de/">Max Planck Institute for Intelligent Systems</a>  under <a href="https://sites.google.com/site/falklieder/home">Dr. Falk Lieder</a>,
         I worked on reverse engineering human learning mechanisms.
  
-        Right now, I am working on developing PAC-Optimal Reinforcement Learning algorithms under the supervision of 
-        <a href="https://www.cse.iitb.ac.in/~shivaram/">Prof. Shivaram Kalyanakrishnan</a>.
+        Right now, I am working on developing PAC-Optimal Reinforcement Learning algorithms under the supervision of <a href="https://www.cse.iitb.ac.in/~shivaram/">Prof. Shivaram Kalyanakrishnan</a>.
       
 
     <p> </p>
@@ -174,7 +170,7 @@
               Yash Raj Jain, <strong>Sanit Gupta</strong>, Vasundhara Rakesh,
               <a href="https://www.kyb.tuebingen.mpg.de/managing-director">Peter Dayan</a>, Frederick Callaway,
               <a href="https://sites.google.com/site/falklieder/home">Falk Lieder</a>
-              <br> <i> Cognitive Computational Neuroscience (CCN), 2019 </i>
+              <br> <i> Cognitive Computational Neuroscience (CCN) 2019 </i>
               <br>
               <p></p>
             </td>
@@ -191,12 +187,14 @@
               <br>        
               <a href="https://www.cse.iitb.ac.in/~shivaram/">Prof. Shivaram Kalyanakrishnan</a>
 
+              <br> <i> <a href="./data/bandit_report.pdf">report</a> // 
+                       <a href="./data/bandit_slides.pdf">slides</a> </i>
               <br> 
-              <p>We developed algorithms for the regular multi-armed bandit setting and a "batch-sampling" setting,
-                in which a batch of pulls must be executed
-                before the rewards of the pulls are received. We have empirically demonstrated improvements over 
-                other algorithms for these settings. 
-                We have made substantial progress towards formally proving non-asymptotic upper bounds on regret.
+              <p> In the MAB problem, resources must be dynamically allocated between competing choices. We are developing and analyzing algorithms for the regular setting and a ”batch-sampling” setting in multi-armed bandits, in which a batch of b > 1 pulls must be executed before the outcomes of the pulls are available. 
+
+              For the regular setting, we introduce an element of greediness called ’persistence’ into any bandit algorithm. We have proved that ’persistence’ improves the epsilon-greedy algorithm. 
+
+              Also, we have empirically demonstrated improvements over baselines in both settings and have made substantial progress towards proving formal guarantees on their performance.
               </p>
             </td>
           </tr>
@@ -210,13 +208,9 @@
               <br>   
               <a href="https://www.me.iitb.ac.in/~sgopalak/">Prof. Shivasubramanian Gopalakrishnan</a>
               <br>
-              <p>The solution to the laplacian equation is used in a large number of domains, including finding the steady state
-                 temperatures of an object given the boundary conditions. We developed a solver that iteratively computes the solution
-                 to the laplacian for arbitrarily shaped objects making use of whatever number of processors is available.
-                 The parallel versions were designed with the MPI paradigm, the problem was divided into smaller parts,
-                 distributed among processors and communication was perfomed between the processors every iteration.
-                 To minimize the communication volume between processors and achieve maximum speed-up graph partitioning algorithms 
-                 from METIS were used. With 16 processors available, we were successful in achieving ~11x speedup.</p>
+              <p> The solution to the laplacian equation is used in a large number of domains, including finding the steady state temperatures of an object given the boundary conditions. 
+
+              We developed a  solver that can iteratively compute the solution to the laplacian for arbitrarily shaped objects. The solver also distributew the computation among whatever number of processors is available to achieve maximum speed-up. MPI was used to communicate the required data between processors after every iteration. We used graph partitioning algorithms to minimize the communication volume between processors and distribute the work optimally were used. We were able to speed up the serial solution by ~12x. </p>
             </td>
           </tr>
           
@@ -230,8 +224,9 @@
               <br>   
               <a href="https://www.lymbyc.com/">Lymbyc</a>, Bangalore
               <br>
-              <p>Built a machine learning pipeline to classify e-commerce products into categories, introduced an active learning component.
-                 Activel learning by Pool based Entropy sampling increased classification accuracy from 89.2% to 98% </p>
+              <p> Built a machine learning pipeline to classify e-commerce products into categories, introduced an active learning component. 
+
+              Active learning by Pool based Entropy sampling increased classification accuracy from 89.2% to 98%. </p>
             </td>
           </tr>
 
@@ -256,10 +251,11 @@
                 <papertitle>Distributed Mixed Integer Optimization</papertitle>
               
               <br>
-              <br> <i> ME766: High Performance Scientific Computing</i>
+              <br> <i> High Performance Scientific Computing</i>
               <br>
               <p> Developed a solver for mixed integer programs implementing the Branch-And-Bound algorithm. 
-                 Developed a parallel version that could reduce runtime from exponential to linear given enough cores  </p>
+
+              Designed a parallel version that could reduce runtime from exponential to linear given enough cores  </p>
             </td>
           </tr>
 
@@ -275,7 +271,8 @@
               <br> <i> 6th Annual Inter-IIT Tech Meet </i>
               <br>
               <p>Solved a stochastic optimization problem to minimize electricity bill for a gated community. 
-                 Modeled the problem as a Markov Decision Process, and found the least cost path using Dynamic Programming.</p>
+
+              Implemented the solutions using Particle Swarm Optimization and Dynamic Programming</p>
             </td>
           </tr>
 
