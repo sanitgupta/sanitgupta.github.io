@@ -186,20 +186,16 @@
             <td style="padding:20px;width:75%;vertical-align:middle">
           
                 <papertitle>Developing and Analyzing Algorithms for the Multi-Armed Bandit</papertitle>
-              <br>
-              <br>        
+                      
               With <a href="https://www.cse.iitb.ac.in/~shivaram/">Prof. Shivaram Kalyanakrishnan</a>
               <br>
               <br> <i> <a href="./data/bandit_report.pdf">report</a> // 
                        <a href="./data/bandit_slides.pdf">slides</a> </i>
               <br> 
-              <p> In the MAB problem, resources must be dynamically allocated between competing choices. We are developing and analyzing algorithms for the regular setting and a ”batch-sampling” setting in multi-armed bandits, in which a batch of b > 1 pulls must be executed before the outcomes of the pulls are available. 
+              <p> In the MAB problem, resources must be dynamically allocated between competing choices. We are developing and analyzing algorithms for the regret minimization setting of the bandit problem.
               <br>
               <br>
-              For the regular setting, we introduce an element of greediness called ’persistence’ into any bandit algorithm. We have proved that ’persistence’ improves the epsilon-greedy algorithm. 
-              <br>
-              <br>
-              Also, we have empirically demonstrated improvements over baselines in both settings and have made substantial progress towards proving formal guarantees on their performance.
+              We introduce an element of greediness called ’persistence’ into any bandit algorithm. We have proved that ’persistence’ improves the epsilon-greedy algorithm. Also, we have empirically demonstrated improvements over the state-of-the-art and have made substantial progress towards proving formal guarantees on their performance.
               </p>
             </td>
           </tr>
@@ -210,15 +206,15 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <papertitle>Parallel Computing for the Laplace Equation on Unstructured Grids</papertitle>
-              <br>
-              <br>   
+              
+           
               With <a href="https://www.me.iitb.ac.in/~sgopalak/">Prof. Shivasubramanian Gopalakrishnan</a>
               <br>
               <br>
               <p> The solution to the laplacian equation is used in a large number of domains, including finding the steady state temperatures of an object given the boundary conditions.
               <br>
               <br>
-              We developed a  solver that can iteratively compute the solution to the laplacian for arbitrarily shaped objects. The solver also distributew the computation among whatever number of processors is available to achieve maximum speed-up. MPI was used to communicate the required data between processors after every iteration. We used graph partitioning algorithms to minimize the communication volume between processors and distribute the work optimally were used. We were able to speed up the serial solution by ~12x. </p>
+              We developed a solver that can iteratively compute the solution to the laplacian for arbitrarily shaped objects. It also distributes the computation among whatever number of processors is available to achieve maximum speed-up. MPI was used to perform inter-processor communication after every iteration. We used graph partitioning algorithms to minimize the communication volume and distribute the work optimally. We were able to achieve speed-ups of upto ~12x. </p>
             </td>
           </tr>
           
@@ -232,7 +228,6 @@
               <br>
               <br>
               <a href="https://www.lymbyc.com/">Lymbyc</a>, Bangalore
-              <br>
               <br>
               <p> Built a machine learning pipeline to classify e-commerce products into categories, introduced an active learning component. 
               <br>
