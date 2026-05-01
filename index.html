@@ -42,7 +42,7 @@
         <heading>About Me</heading>
         <p>          
         </p>
-        I'm a quantitative researcher at <a href="https://www.alphagrep.com/">AlphaGrep</a> in London, working across strategy research, live systematic trading, and the infrastructure and machine learning models that support it. Previously, I traded options at <a href="https://www.optiver.com/">Optiver</a> in Amsterdam.
+        I'm a quantitative researcher at <a href="https://www.alpha-grep.com/">AlphaGrep</a> in London, working across strategy research, live systematic trading, and the infrastructure and machine learning models that support it. Previously, I traded options at <a href="https://www.optiver.com/">Optiver</a> in Amsterdam.
         <br>
         <br>
 
@@ -118,7 +118,7 @@
                   <li> <i> [Jul 2020]</i>&nbsp; Our work on modelling the spread of COVID-19 in India is now out on <a href="https://arxiv.org/abs/2007.14392">arXiv</a> </li>
                   <li> <i> [Jun 2020]</i>&nbsp; I was accepted into the <a href="https://dlrlsummerschool.ca/">DLRL Summer School 2020</a> hosted by <a href="https://www.cifar.ca/">CIFAR</a> and <a href="https://mila.quebec/en/">Mila</a></li>
                   <li> <i> [Aug 2019]</i>&nbsp; I was awarded the Undergraduate Research Award at IIT Bombay</li>
-                  <li> <i> [Jul 2019]</i>&nbsp; Our <a href="https://ccneuro.org/2019/proceedings/0000826.pdf">paper</a> on reverse engineering human planning accepted at CCN 2019 </li>
+                  <li> <i> [Jul 2019]</i>&nbsp; Our <a href="https://2019.ccneuro.org/proceedings/0000826.pdf">paper</a> on reverse engineering human planning accepted at CCN 2019 </li>
                   <li> <i> [May 2019]</i>&nbsp; I'll be interning at the <a href="https://www.is.mpg.de/">Max Planck Institute for Intelligent Systems</a> over Summer 2019</li>
                   <li> <i> [Sep 2017]</i>&nbsp; Ranked 1st in IIT Bombay in <a href="https://www.americanexpress.com/">American Express</a>'s data science competition </li>
               </ul>
@@ -148,7 +148,7 @@
               <br>
               <strong>Sanit Gupta</strong>, Sahil Shah, Sumit Chaturvedi, Pranav Thakkar, Parvinder Solanki, Soham Dibyachintan, Sandeepan Roy, M. B. Sushma, Adwait Godbole, Noufal Jaseem, Pradumn Kumar, Sucheta Ravikanti, Aritra Das, Giridhara R. Babu, Tarun Bhatnagar, Avijit Maji, <a href="http://www.phy.iitb.ac.in/en/faculty/mithun">Mithun K. Mitra</a>, <a href="http://www.phy.iitb.ac.in/physics/en/content/sai-vinjanampathy">Sai Vinjanampathy</a>
               <br>
-              <br> <i> <a href="https://arxiv.org/abs/2007.14392">preprint</a> //
+              <br> <i> <a href="https://arxiv.org/abs/2007.14392">report</a> //
                        <a href="https://github.com/sanitgupta/X-SEAIPR">code</a> </i>
               <br>
               <p></p>
@@ -165,9 +165,9 @@
               </a>
               <br>
               <br>
-              S. Jain, R. Shah, <strong>S. Gupta</strong>, D. Mehta, I. Nair, J. Vora, S. Khyalia, S. Das, V. Ribeiro, S. Kalyanakrishnan
-              <br>
+              S. Jain, R. Shah, <strong>S. Gupta</strong>, D. Mehta, I. Nair, J. Vora, S. Khyalia, S. Das, <a href="https://www.cse.iitb.ac.in/~vinayr/">V. Ribeiro</a>, <a href="https://www.cse.iitb.ac.in/~shivaram/">S. Kalyanakrishnan</a>
               <br> <i> International Conference on Artificial Intelligence and Statistics (AISTATS) 2022 </i>
+              <br>
               <br> <i> <a href="https://proceedings.mlr.press/v151/anand-jain22a/anand-jain22a.pdf">paper</a> </i>
               <p></p>
             </td>
@@ -195,7 +195,7 @@
               <br>
               <br>
               Yash Raj Jain, <strong>Sanit Gupta</strong>, Vasundhara Rakesh,
-              <a href="https://www.kyb.tuebingen.mpg.de/managing-director">Peter Dayan</a>, Frederick Callaway,
+              <a href="https://en.wikipedia.org/wiki/Peter_Dayan">Peter Dayan</a>, Frederick Callaway,
               <a href="https://sites.google.com/site/falklieder/home">Falk Lieder</a>
 
               <br> <i> Cognitive Computational Neuroscience (CCN) 2019 </i>
@@ -216,7 +216,7 @@
               With <a href="https://www.cse.iitb.ac.in/~shivaram/">Prof. Shivaram Kalyanakrishnan</a>
 
               <br>
-              <p> In the Multi-Armed Bandit problem, resources must be dynamically allocated between competing choices. We developed and analyzed algorithms for the regret minimization setting of the bandit problem.
+              <p> Developed Persistence - a generally applicable modification to multi-armed bandit algorithms. Empirically outperformed the corresponding unmodified baselines across all proposed algorithms, and proved the improvement theoretically for the &epsilon;-greedy algorithm.
               <br>
               <br> <i> <a href="./data/bandit_report.pdf">report</a> //
                        <a href="./data/bandit_slides.pdf">slides</a> </i>
@@ -236,10 +236,7 @@
               With <a href="https://www.me.iitb.ac.in/~sgopalak/">Prof. Shivasubramanian Gopalakrishnan</a>
 
               <br>
-              <p> The solution to the laplacian equation is used in a large number of domains, including finding the steady state temperatures of an object given the boundary conditions.
-              <br>
-              <br>
-              We developed a solver that can iteratively compute the solution to the laplacian for arbitrarily shaped objects. It also distributes the computation among whatever number of processors is available to achieve maximum speed-up.  We used graph partitioning algorithms to minimize the communication volume and distribute the work optimally and MPI to perform all necessary inter-processor communication. We were able to achieve speed-ups of upto ~12x. </p>
+              <p> Developed an end-to-end parallel solver for the Laplace equation over arbitrary domain shapes, with applications in thermodynamics and electrostatics. Compared naive geometric partitioning with graph-based min-cut partitioning and showed that min-cut partitioning significantly reduces inter-processor communication volume, yielding up to ~14x speedup over the serial solver. </p>
             </td>
           </tr>
 
